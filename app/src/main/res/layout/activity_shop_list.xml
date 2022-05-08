@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ShopListActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+
+    <ImageView
+        android:id="@+id/mom"
+        android:layout_width="122dp"
+        android:layout_height="173dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mom" />
+
+
+
+    <ImageView
+        android:id="@+id/turningred"
+        android:layout_width="123dp"
+        android:layout_height="181dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="216dp"
+        app:layout_constraintLeft_toLeftOf="@id/mom"
+        app:layout_constraintTop_toTopOf="@+id/mom"
+        app:srcCompat="@drawable/turningred" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="150dp"
+            app:layout_constraintLeft_toRightOf="@+id/mom"
+            app:layout_constraintTop_toTopOf="@id/mom"
+            android:text="Dr. Strange and the multiverse of madness"
+            />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="300dp"
+        android:text="Turning red"
+        app:layout_constraintLeft_toRightOf="@+id/turningred"
+        app:layout_constraintTop_toTopOf="@+id/turningred" />
+</RelativeLayout>
